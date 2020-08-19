@@ -67,16 +67,4 @@ public class Percolation {
     private int getIndex(int row, int col) {
         return length * (row - 1) + col;
     }
-
-    public static void main(String[] args) {
-        Percolation perc = new Percolation(10);
-        perc.open(1, 1);
-        perc.open(2, 1);
-        perc.open(3, 1);
-        perc.open(4, 1);
-        perc.open(5, 1);
-        System.out.println(perc.percolates());
-        System.out.println(perc.numberOfOpenSites());
-    }
-
 }
